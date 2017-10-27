@@ -18,6 +18,7 @@ namespace Akapulko
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             cout<<"test";
+            cout<<"koniec testu";
 
         }
     }
