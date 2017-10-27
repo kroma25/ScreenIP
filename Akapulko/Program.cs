@@ -19,7 +19,8 @@ namespace Akapulko
             Application.Run(new Form1());
             cout<<"test";
             cout<<"koniec testu";
-
+            int a;
+        
         }
     }
 }
