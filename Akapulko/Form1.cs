@@ -17,7 +17,22 @@ namespace Akapulko
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close(); //Zamykanie aplikacji
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void contextMenuStrip3_Opening(object sender, CancelEventArgs e)
         {
 
         }
