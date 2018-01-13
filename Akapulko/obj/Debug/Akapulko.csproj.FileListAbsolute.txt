@@ -1,9 +1,0 @@
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Form1.resources
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Properties.Resources.resources
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csproj.GenerateResource.Cache
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csproj.CoreCompileInputs.cache
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\bin\Debug\Akapulko.exe.config
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\bin\Debug\Akapulko.exe
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\bin\Debug\Akapulko.pdb
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\obj\Debug\Akapulko.exe
-C:\Users\Przemek\Source\Repos\ScreenIP\Akapulko\obj\Debug\Akapulko.pdb
