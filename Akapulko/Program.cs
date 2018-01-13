@@ -29,5 +29,5 @@ namespace Akapulko
  *  FormBorderStyle:none, ShowIcon:false, ShowInTaskbar:false, Opacity:0%, WindowState:Minimized
  *  Dzięki temu mamy Tray można by to zrobić inaczej ale na szybko to wystarczy
  *  
- *  dupa dupa 123
+ * 
  */

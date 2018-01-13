@@ -36,5 +36,11 @@ namespace Akapulko
         {
 
         }
+
+        private void ustawieniaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 wnd = new Form2();
+            wnd.Show();
+        }
     }
 }
