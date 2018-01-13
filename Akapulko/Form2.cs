@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
+using System.Drawing.Imaging; // za obraz
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net.Sockets;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Net.Sockets; //za siec
+using System.Runtime.Serialization.Formatters.Binary; //odpowiadajacy za konwersje obrazu
 
 namespace Akapulko
 {

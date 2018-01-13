@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akapulko", "Akapulko.csproj", "{77E17CC9-B11F-4D4B-86B1-A1EAAB1F1B01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akapulko_Klient", "Akapulko_Klient.csproj", "{77E17CC9-B11F-4D4B-86B1-A1EAAB1F1B01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akapulko_Serwer", "..\Akapulko-Serwer\Akapulko_Serwer.csproj", "{3904139B-F0E7-4ED2-921B-B0DD3EB5DE0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{77E17CC9-B11F-4D4B-86B1-A1EAAB1F1B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E17CC9-B11F-4D4B-86B1-A1EAAB1F1B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E17CC9-B11F-4D4B-86B1-A1EAAB1F1B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3904139B-F0E7-4ED2-921B-B0DD3EB5DE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3904139B-F0E7-4ED2-921B-B0DD3EB5DE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3904139B-F0E7-4ED2-921B-B0DD3EB5DE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3904139B-F0E7-4ED2-921B-B0DD3EB5DE0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{77E17CC9-B11F-4D4B-86B1-A1EAAB1F1B01}</ProjectGuid>
+    <ProjectGuid>{3904139B-F0E7-4ED2-921B-B0DD3EB5DE0E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Akapulko</RootNamespace>
-    <AssemblyName>Akapulko</AssemblyName>
+    <RootNamespace>Akapulko_Serwer</RootNamespace>
+    <AssemblyName>Akapulko-Serwer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
