@@ -45,17 +45,17 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(62, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(38, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "Port:";
             // 
             // btnListen
             // 
-            this.btnListen.Location = new System.Drawing.Point(130, 191);
+            this.btnListen.Location = new System.Drawing.Point(65, 157);
             this.btnListen.Name = "btnListen";
-            this.btnListen.Size = new System.Drawing.Size(75, 23);
+            this.btnListen.Size = new System.Drawing.Size(145, 57);
             this.btnListen.TabIndex = 2;
-            this.btnListen.Text = "button1";
+            this.btnListen.Text = "Udostępnij";
             this.btnListen.UseVisualStyleBackColor = true;
             this.btnListen.Click += new System.EventHandler(this.btnListen_Click);
             // 
