@@ -2,24 +2,25 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Drawing.Imaging; // za obraz
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net.Sockets; //za siec
 using System.Runtime.Serialization.Formatters.Binary; //odpowiadajacy za konwersje obrazu
+using System.Net.Sockets; //za siec
+using System.Drawing.Imaging; // za obraz
+using System.Drawing;
+
 
 namespace Akapulko
 {
-    public partial class Form2 : Form
+    public partial class Form2 : Form 
     {
         private readonly TcpClient client = new TcpClient();
         private NetworkStream mainStream;
         private int portNumber;
 
-      
+
         private static Image GrabDesktop()
         {
             //lapanie obrazu przez screenshoty
@@ -35,7 +36,7 @@ namespace Akapulko
             //wysylanie obrazu do pary:P
             BinaryFormatter binFormatter = new BinaryFormatter();
             mainStream = client.GetStream();
-            binFormatter.Serialize(mainStream,GrabDesktop());
+            binFormatter.Serialize(mainStream, GrabDesktop());
 
         }
         public Form2()

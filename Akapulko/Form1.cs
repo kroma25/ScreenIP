@@ -42,5 +42,11 @@ namespace Akapulko
             Form2 wnd = new Form2();
             wnd.Show();
         }
+
+        private void serwerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 wnd = new Form3();
+            wnd.Show();
+        }
     }
 }
