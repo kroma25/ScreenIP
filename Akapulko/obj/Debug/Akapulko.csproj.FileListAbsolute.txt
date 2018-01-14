@@ -9,3 +9,5 @@ C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.exe
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.pdb
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Form2.resources
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csprojResolveAssemblyReference.cache
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Form3.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Form4.resources

@@ -23,22 +23,44 @@ namespace Akapulko
 
         private readonly Thread Listening;
         private readonly Thread GetImage;
-
+        Thread UDPBroadcasting;
         public Form4(int Port)
         {
             port = Port;
             client = new TcpClient();
+            UDPBroadcasting = new Thread(UDPBroadcast);
             Listening = new Thread(StartListening);
             GetImage = new Thread(ReceiveImage);
             InitializeComponent();
-        }
+            UDPBroadcasting.Start();//uruchomienie wątku 2h szukania ...
 
+        }
+        private void UDPBroadcast()
+        {
+            //brodcast servera po sieci
+            // https://stackoverflow.com/questions/22852781/how-to-do-network-discovery-using-udp-broadcast
+            
+            var ServerUDP = new UdpClient(8888);
+            var ResponseData = Encoding.ASCII.GetBytes("" + port);
+            //tutaj trzeba dopracowac serwer ma nadawc caly czas albo jak serwer odpowie
+            //odchudzic kod nie potrzebuje wszystkiego z tąd
+            while (true)
+            {
+                var ClientEp = new IPEndPoint(IPAddress.Any, 0);
+                var ClientRequestData = ServerUDP.Receive(ref ClientEp);
+                var ClientRequest = Encoding.ASCII.GetString(ClientRequestData);
+
+                //Console.WriteLine("Recived {0} from {1}, sending response", ClientRequest, ClientEp.Address.ToString());
+                ServerUDP.Send(ResponseData, ResponseData.Length, ClientEp);
+            }
+        }
         private void StartListening()
         {
             while (client.Connected == false)
             {
                 server.Start();
                 client = server.AcceptTcpClient();
+                               
             }
             GetImage.Start();
         }

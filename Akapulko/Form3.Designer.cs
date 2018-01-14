@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.btnListen = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,15 +56,25 @@
             this.btnListen.Name = "btnListen";
             this.btnListen.Size = new System.Drawing.Size(145, 57);
             this.btnListen.TabIndex = 4;
-            this.btnListen.Text = "Udostępnij";
+            this.btnListen.Text = "Połącz";
             this.btnListen.UseVisualStyleBackColor = true;
             this.btnListen.Click += new System.EventHandler(this.btnListen_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "IP:";
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnListen);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.label1);
@@ -79,5 +90,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.Button btnListen;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -10,7 +10,7 @@ using System.Runtime.Serialization.Formatters.Binary; //odpowiadajacy za konwers
 using System.Net.Sockets; //za siec
 using System.Drawing.Imaging; // za obraz
 using System.Drawing;
-
+using System.Net;
 
 namespace Akapulko
 {
@@ -63,7 +63,7 @@ namespace Akapulko
         private void btnSend_Click(object sender, EventArgs e)
         {
             //Wysyłanie obrazu
-            if (btnSend.Text.StartsWith("Wyślij ekran"))
+            if (btnSend.Text.StartsWith("Udostępnij Ekran"))
             {
                 timer1.Start();
                 btnSend.Text = "Przerwij transmisje";
@@ -71,7 +71,7 @@ namespace Akapulko
             else
             {
                 timer1.Stop();
-                btnSend.Text = "Wyślij ekran";
+                btnSend.Text = "Udostępnij Ekran";
             }
         }
 
@@ -79,6 +79,28 @@ namespace Akapulko
         {
             //w zasadzie to sluzy tylko do wywolania funkcji
             SendDesktopImage();
+        }
+
+        private void btnAutoSearch_Click(object sender, EventArgs e)
+        {
+            //sprawdzenie czy ktos nie nadaje
+            // https://stackoverflow.com/questions/22852781/how-to-do-network-discovery-using-udp-broadcast
+            //odchudzic kod nie potrzeben jest odslanie po udp
+            var Client = new UdpClient();
+            var RequestData = Encoding.ASCII.GetBytes("SomeRequestData");
+            var ServerEp = new IPEndPoint(IPAddress.Any, 0);
+
+            Client.EnableBroadcast = true;
+            Client.Send(RequestData, RequestData.Length, new IPEndPoint(IPAddress.Broadcast, 8888));
+
+            var ServerResponseData = Client.Receive(ref ServerEp);
+            var ServerResponse = Encoding.ASCII.GetString(ServerResponseData);
+            //Console.WriteLine("Recived {0} from {1}", ServerResponse, ServerEp.Address.ToString());
+
+            //przypodkowanie adresu i portu
+            txtIp.Text= ServerEp.Address.ToString();
+            txtPort.Text= ServerResponse;           
+            Client.Close();
         }
     }
 }

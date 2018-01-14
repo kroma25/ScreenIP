@@ -36,6 +36,7 @@
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnSend = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnAutoSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +87,7 @@
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(102, 67);
             this.btnSend.TabIndex = 7;
-            this.btnSend.Text = "Wyślij ekran";
+            this.btnSend.Text = "Udostępnij Ekran";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
@@ -94,11 +95,22 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnAutoSearch
+            // 
+            this.btnAutoSearch.Location = new System.Drawing.Point(36, 103);
+            this.btnAutoSearch.Name = "btnAutoSearch";
+            this.btnAutoSearch.Size = new System.Drawing.Size(220, 63);
+            this.btnAutoSearch.TabIndex = 8;
+            this.btnAutoSearch.Text = "Wyszukaj automatycznie";
+            this.btnAutoSearch.UseVisualStyleBackColor = true;
+            this.btnAutoSearch.Click += new System.EventHandler(this.btnAutoSearch_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Controls.Add(this.btnAutoSearch);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtPort);
@@ -120,5 +132,6 @@
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnAutoSearch;
     }
 }
