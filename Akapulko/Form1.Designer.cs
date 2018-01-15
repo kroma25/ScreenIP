@@ -32,14 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serwerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zamknijToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.serwerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip3
             // 
+            this.contextMenuStrip3.BackColor = System.Drawing.Color.White;
+            this.contextMenuStrip3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.contextMenuStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ustawieniaToolStripMenuItem,
@@ -56,6 +58,13 @@
             this.ustawieniaToolStripMenuItem.Text = "Klient";
             this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click);
             // 
+            // serwerToolStripMenuItem
+            // 
+            this.serwerToolStripMenuItem.Name = "serwerToolStripMenuItem";
+            this.serwerToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.serwerToolStripMenuItem.Text = "Serwer";
+            this.serwerToolStripMenuItem.Click += new System.EventHandler(this.serwerToolStripMenuItem_Click);
+            // 
             // zamknijToolStripMenuItem
             // 
             this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
@@ -70,13 +79,6 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
-            // 
-            // serwerToolStripMenuItem
-            // 
-            this.serwerToolStripMenuItem.Name = "serwerToolStripMenuItem";
-            this.serwerToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.serwerToolStripMenuItem.Text = "Serwer";
-            this.serwerToolStripMenuItem.Click += new System.EventHandler(this.serwerToolStripMenuItem_Click);
             // 
             // Form1
             // 

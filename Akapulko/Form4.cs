@@ -33,7 +33,8 @@ namespace Akapulko
             GetImage = new Thread(ReceiveImage);
             InitializeComponent();
             UDPBroadcasting.Start();//uruchomienie wątku 2h szukania ...
-
+            //pictureBox1.Size = new System.Drawing.Size(1536, 960);
+            
         }
         private void UDPBroadcast()
         {
@@ -84,6 +85,11 @@ namespace Akapulko
             {
                 mainStream = client.GetStream();
                 pictureBox1.Image = (Image)binFormatter.Deserialize(mainStream);
+                //testy
+                Image temp = (Image)binFormatter.Deserialize(mainStream);
+                int imageHeight = temp.Height; //960
+                int imageWidth = temp.Width; //1536
+                //koniec testow
             }
         }
         protected override void OnLoad(EventArgs e)
