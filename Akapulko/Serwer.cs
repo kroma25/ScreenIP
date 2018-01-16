@@ -21,6 +21,7 @@ namespace Akapulko
             
             InitializeComponent();
             label2.Text = "IP(WiFi): " + GetLocalIPv4(NetworkInterfaceType.Wireless80211);
+            label3.Text = "IP(Eth): " + GetLocalIPv4(NetworkInterfaceType.Ethernet);
         }
 
         private void btnListen_Click(object sender, EventArgs e)

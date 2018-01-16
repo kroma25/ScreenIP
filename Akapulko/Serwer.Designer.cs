@@ -33,6 +33,7 @@
             this.txtPort = new System.Windows.Forms.TextBox();
             this.btnListen = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,10 +56,10 @@
             // 
             // btnListen
             // 
-            this.btnListen.Location = new System.Drawing.Point(47, 124);
+            this.btnListen.Location = new System.Drawing.Point(26, 149);
             this.btnListen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnListen.Name = "btnListen";
-            this.btnListen.Size = new System.Drawing.Size(109, 46);
+            this.btnListen.Size = new System.Drawing.Size(158, 46);
             this.btnListen.TabIndex = 4;
             this.btnListen.Text = "Połącz";
             this.btnListen.UseVisualStyleBackColor = true;
@@ -74,11 +75,21 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "IP(WiFi):";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "IP(Eth): ";
+            // 
             // Serwer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(212, 206);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnListen);
             this.Controls.Add(this.txtPort);
@@ -98,5 +109,6 @@
         private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.Button btnListen;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
