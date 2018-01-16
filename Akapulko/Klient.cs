@@ -104,6 +104,7 @@ namespace Akapulko
             {
                 client.Connect(txtIp.Text, portNumber);
                 MessageBox.Show("Połączono!");
+                btnSend.Enabled = true;
             }
             catch (Exception)
             {
@@ -115,6 +116,8 @@ namespace Akapulko
         private void btnSend_Click(object sender, EventArgs e)
         {
             //Wysyłanie obrazu
+            
+            
             if (btnSend.Text.StartsWith("Udostępnij Ekran"))
             {
                 timer1.Start();
@@ -158,7 +161,7 @@ namespace Akapulko
         }
 
     }
-    //1. Potrzebne do obslugi modul
+    //1. Potrzebne do obslugi modul myszki
     public static class User32
     {
         public const Int32 CURSOR_SHOWING = 0x00000001;
