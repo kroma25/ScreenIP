@@ -14,7 +14,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Akapulko
 {
-    public partial class Form4 : Form
+    public partial class Podglad : Form
     {
         private readonly int port;
         private TcpClient client;
@@ -24,7 +24,7 @@ namespace Akapulko
         private readonly Thread Listening;
         private readonly Thread GetImage;
         Thread UDPBroadcasting;
-        public Form4(int Port)
+        public Podglad(int Port)
         {
             port = Port;
             client = new TcpClient();

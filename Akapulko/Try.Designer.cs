@@ -1,6 +1,6 @@
 ﻿namespace Akapulko
 {
-    partial class Form1
+    partial class Try
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Try));
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serwerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,27 +48,27 @@
             this.serwerToolStripMenuItem,
             this.zamknijToolStripMenuItem});
             this.contextMenuStrip3.Name = "contextMenuStrip3";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(182, 110);
+            this.contextMenuStrip3.Size = new System.Drawing.Size(135, 82);
             this.contextMenuStrip3.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip3_Opening);
             // 
             // ustawieniaToolStripMenuItem
             // 
             this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
-            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
             this.ustawieniaToolStripMenuItem.Text = "Klient";
             this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click);
             // 
             // serwerToolStripMenuItem
             // 
             this.serwerToolStripMenuItem.Name = "serwerToolStripMenuItem";
-            this.serwerToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.serwerToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
             this.serwerToolStripMenuItem.Text = "Serwer";
             this.serwerToolStripMenuItem.Click += new System.EventHandler(this.serwerToolStripMenuItem_Click);
             // 
             // zamknijToolStripMenuItem
             // 
             this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
-            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
             this.zamknijToolStripMenuItem.Text = "Zamknij";
             this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
             // 
@@ -76,15 +76,15 @@
             // 
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip3;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Text = "Akapulko";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
-            // Form1
+            // Try
             // 
             this.ClientSize = new System.Drawing.Size(282, 253);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Try";
             this.Opacity = 0D;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

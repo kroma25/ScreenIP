@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Akapulko
 {
-    public partial class Form1 : Form
+    public partial class Try : Form
     {
-        public Form1()
+        public Try()
         {
             InitializeComponent();
         }
@@ -39,13 +39,13 @@ namespace Akapulko
 
         private void ustawieniaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 wnd = new Form2();
+            Klient wnd = new Klient();
             wnd.Show();
         }
 
         private void serwerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 wnd = new Form3();
+            Serwer wnd = new Serwer();
             wnd.Show();
         }
     }

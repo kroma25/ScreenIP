@@ -17,7 +17,7 @@ namespace Akapulko
 {
     
     //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    public partial class Form2 : Form
+    public partial class Klient : Form
     {
         private readonly TcpClient client = new TcpClient();
         private NetworkStream mainStream;
@@ -30,12 +30,30 @@ namespace Akapulko
             //lapanie obrazu przez screenshoty
             Rectangle bounds = Screen.PrimaryScreen.Bounds;
             Bitmap screenshot = new Bitmap(bounds.Width, bounds.Height, PixelFormat.Format32bppPArgb);
+            
             Graphics graphic = Graphics.FromImage(screenshot);
-            graphic.CopyFromScreen(bounds.X, bounds.Y, 0, 0, bounds.Size, CopyPixelOperation.SourceCopy);
-
+            
+            graphic.CopyFromScreen(0, 0, 0, 0, screenshot.Size, CopyPixelOperation.SourceCopy);
             User32.CURSORINFO cursorInfo;
             cursorInfo.cbSize = Marshal.SizeOf(typeof(User32.CURSORINFO));
 
+            //rozdzielcznosc rzeczywista jest sprawdzana na komputerze i ustawina potem jest konwertowan na rodzielczosc virtualna!!
+            //xxxxxxxxxxxxxxxxxxxx
+            /*
+            public static class ScreenUtil
+        {
+            public static Bitmap Capture(int x, int y, int width, int height)
+            {
+                var bitmap = new Bitmap(width, height, PixelFormat.Format24bppRgb);
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    g.CopyFromScreen(x, y, 0, 0, bitmap.Size, CopyPixelOperation.SourceCopy);
+                }
+                return bitmap;
+            }
+        }
+        */
+            //xxxxxxxxxxxxxxxxx
             if (User32.GetCursorInfo(out cursorInfo))
             {
                 // if the cursor is showing draw it on the screen shot
@@ -73,7 +91,7 @@ namespace Akapulko
             
 
         }
-        public Form2()
+        public Klient()
         {
             InitializeComponent();
         }

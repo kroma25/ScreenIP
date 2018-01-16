@@ -1,13 +1,13 @@
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\bin\Debug\Akapulko.exe.config
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\bin\Debug\Akapulko.exe
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\bin\Debug\Akapulko.pdb
-C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Form1.resources
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Properties.Resources.resources
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csproj.GenerateResource.Cache
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csproj.CoreCompileInputs.cache
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.exe
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.pdb
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csprojResolveAssemblyReference.cache
-C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Form3.resources
-C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Form4.resources
-C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Form2.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Try.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Klient.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Serwer.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Podglad.resources
