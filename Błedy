@@ -2,3 +2,10 @@
 # 1366x768 dzi³a poprawnie
 # 1920x1200 obcina i Ÿle szczytuje rozmiar ramki, problem z dpi
 
+- broadcast UDP - jest mo¿liwa tylko jedna inicjalizacja
+# jeœli uruchomiy okno serwer i wdusmymy po³¹cz zamkniemy okno tu ponowne uruchominiea okna nie zadzia³a nam UDP
+tymczasowe obejscie: ponowne otwarcie okna nie w³acza UDP gdy¿ UDP ca³y 
+
+- serwer zamkniêcie okna podgl¹du podczas otrzymywania pakietow zacina ca³y program
+
+-

@@ -16,33 +16,33 @@ namespace Akapulko
 {
     public partial class Podglad : Form
     {
-        private readonly int port;
-        private TcpClient client;
-        private TcpListener server;
+        private readonly int portTCP;
+        private TcpClient clientTCP;
+        private TcpListener serverTCP;
         private NetworkStream mainStream;
 
         private readonly Thread Listening;
         private readonly Thread GetImage;
         Thread UDPBroadcasting;
+        
         public Podglad(int Port)
         {
-            port = Port;
-            client = new TcpClient();
+            portTCP = Port;
+            clientTCP = new TcpClient();
             UDPBroadcasting = new Thread(UDPBroadcast);
             Listening = new Thread(StartListening);
             GetImage = new Thread(ReceiveImage);
             InitializeComponent();
-            UDPBroadcasting.Start();//uruchomienie wątku 2h szukania ...
             //pictureBox1.Size = new System.Drawing.Size(1536, 960);
-            
+            UDPBroadcasting.Start();//uruchomienie wątku 2h szukania ... 
+                    
         }
         private void UDPBroadcast()
         {
             //brodcast servera po sieci
             // https://stackoverflow.com/questions/22852781/how-to-do-network-discovery-using-udp-broadcast
-            
             var ServerUDP = new UdpClient(8888);
-            var ResponseData = Encoding.ASCII.GetBytes("" + port);
+            var ResponseData = Encoding.ASCII.GetBytes("" + portTCP);
             //tutaj trzeba dopracowac serwer ma nadawc caly czas albo jak serwer odpowie
             //odchudzic kod nie potrzebuje wszystkiego z tąd
             while (true)
@@ -57,18 +57,20 @@ namespace Akapulko
         }
         private void StartListening()
         {
-            while (client.Connected == false)
+            while (clientTCP.Connected == false)
             {
-                server.Start();
-                client = server.AcceptTcpClient();
-                               
+                serverTCP.Start();
+                clientTCP = serverTCP.AcceptTcpClient();
+                
             }
             GetImage.Start();
+            UDPBroadcasting.Abort(); 
         }
         private void StopListening()
         {
-            server.Stop();
-            client = null;
+            serverTCP.Stop();
+            clientTCP = null;
+            
             if (Listening.IsAlive == true)
             {
                 Listening.Abort();
@@ -77,13 +79,23 @@ namespace Akapulko
             {
                 GetImage.Abort();
             }
+
+            //tymaczosowa naprawa #2 odkomentowac później
+            /*
+            if (UDPBroadcasting.IsAlive == true)
+            {
+                UDPBroadcasting.Abort();
+
+            }
+            */
+            //tymaczosowa naprawa #2
         }
         private void ReceiveImage()
         {
             BinaryFormatter binFormatter = new BinaryFormatter();
-            while (client.Connected)
+            while (clientTCP.Connected)
             {
-                mainStream = client.GetStream();
+                mainStream = clientTCP.GetStream();
                 pictureBox1.Image = (Image)binFormatter.Deserialize(mainStream);
                 //testy
                 Image temp = (Image)binFormatter.Deserialize(mainStream);
@@ -95,7 +107,7 @@ namespace Akapulko
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            server = new TcpListener(IPAddress.Any, port);
+            serverTCP = new TcpListener(IPAddress.Any, portTCP);
             Listening.Start();
         }
         protected override void OnClosing(CancelEventArgs e)
