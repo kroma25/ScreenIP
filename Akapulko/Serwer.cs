@@ -20,7 +20,7 @@ namespace Akapulko
         {
             
             InitializeComponent();
-            label2.Text = "IP: " + GetLocalIPv4(NetworkInterfaceType.Wireless80211);
+            label2.Text = "IP(WiFi): " + GetLocalIPv4(NetworkInterfaceType.Wireless80211);
         }
 
         private void btnListen_Click(object sender, EventArgs e)

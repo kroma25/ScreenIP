@@ -16,7 +16,7 @@ using System.Runtime.InteropServices; //myszka
 namespace Akapulko
 {
     
-    //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   
     public partial class Klient : Form
     {
         private readonly TcpClient client = new TcpClient();
@@ -38,22 +38,9 @@ namespace Akapulko
             cursorInfo.cbSize = Marshal.SizeOf(typeof(User32.CURSORINFO));
 
             //rozdzielcznosc rzeczywista jest sprawdzana na komputerze i ustawina potem jest konwertowan na rodzielczosc virtualna!!
-            //xxxxxxxxxxxxxxxxxxxx
-            /*
-            public static class ScreenUtil
-        {
-            public static Bitmap Capture(int x, int y, int width, int height)
-            {
-                var bitmap = new Bitmap(width, height, PixelFormat.Format24bppRgb);
-                using (Graphics g = Graphics.FromImage(bitmap))
-                {
-                    g.CopyFromScreen(x, y, 0, 0, bitmap.Size, CopyPixelOperation.SourceCopy);
-                }
-                return bitmap;
-            }
-        }
-        */
-            //xxxxxxxxxxxxxxxxx
+            
+
+
             if (User32.GetCursorInfo(out cursorInfo))
             {
                 // if the cursor is showing draw it on the screen shot

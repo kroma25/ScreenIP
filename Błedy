@@ -8,4 +8,6 @@ tymczasowe obejscie: ponowne otwarcie okna nie w³acza UDP gdy¿ UDP ca³y
 
 - serwer zamkniêcie okna podgl¹du podczas otrzymywania pakietow zacina ca³y program
 
--
+- w zasadzie ca³y program dzia³a tylko jesli robimy wszystkow odpowiedniach krokach
+
+

@@ -19,7 +19,7 @@ namespace Akapulko
         private readonly int portTCP;
         private TcpClient clientTCP;
         private TcpListener serverTCP;
-        private NetworkStream mainStream;
+        private NetworkStream mainStreamTCP;
 
         private readonly Thread Listening;
         private readonly Thread GetImage;
@@ -95,10 +95,10 @@ namespace Akapulko
             BinaryFormatter binFormatter = new BinaryFormatter();
             while (clientTCP.Connected)
             {
-                mainStream = clientTCP.GetStream();
-                pictureBox1.Image = (Image)binFormatter.Deserialize(mainStream);
+                mainStreamTCP = clientTCP.GetStream();
+                pictureBox1.Image = (Image)binFormatter.Deserialize(mainStreamTCP);
                 //testy
-                Image temp = (Image)binFormatter.Deserialize(mainStream);
+                Image temp = (Image)binFormatter.Deserialize(mainStreamTCP);
                 int imageHeight = temp.Height; //960
                 int imageWidth = temp.Width; //1536
                 //koniec testow

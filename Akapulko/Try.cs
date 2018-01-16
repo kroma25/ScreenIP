@@ -25,7 +25,6 @@ namespace Akapulko
         private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close(); //Zamykanie aplikacji
-            
         }
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
