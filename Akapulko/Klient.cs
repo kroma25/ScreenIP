@@ -86,7 +86,14 @@ namespace Akapulko
         private void btnConnect_Click(object sender, EventArgs e)
         {
             //Sprawdzenie czy uda się połaczyć z serwerem
+            try
+            { 
             portNumber = int.Parse(txtPort.Text);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Błędne dane!");
+            }
             try
             {
                 client.Connect(txtIp.Text, portNumber);
@@ -96,7 +103,7 @@ namespace Akapulko
             catch (Exception)
             {
                 MessageBox.Show("Internet z biedronki...");
-                throw;
+                //throw; wyrzucanie aplikacji
             }
         }
 
