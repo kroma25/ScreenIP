@@ -99,6 +99,8 @@ namespace Akapulko
                 client.Connect(txtIp.Text, portNumber);
                 MessageBox.Show("Połączono!");
                 btnSend.Enabled = true;
+                btnAutoSearch.Enabled = false;
+                btnConnect.Enabled = false;
             }
             catch (Exception)
             {
