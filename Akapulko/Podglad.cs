@@ -23,18 +23,23 @@ namespace Akapulko
 
         private readonly Thread Listening;
         private readonly Thread GetImage;
-        Thread UDPBroadcasting;
-        
+
+        // public Thread UDPBroadcasting { get; set; }
+
+        //private Serwer Serwer; #UTP
+
+
         public Podglad(int Port)
         {
             portTCP = Port;
             clientTCP = new TcpClient();
-            UDPBroadcasting = new Thread(UDPBroadcast);
+            //UDPBroadcasting = new Thread(UDPBroadcast);
             Listening = new Thread(StartListening);
             GetImage = new Thread(ReceiveImage);
             InitializeComponent();
+            
             //pictureBox1.Size = new System.Drawing.Size(1536, 960);
-            UDPBroadcasting.Start();//uruchomienie wątku 2h szukania ... 
+            //UDPBroadcasting.Start();//uruchomienie wątku 2h szukania ... 
                     
         }
         private void UDPBroadcast()
@@ -50,8 +55,6 @@ namespace Akapulko
                 var ClientEp = new IPEndPoint(IPAddress.Any, 0);
                 var ClientRequestData = ServerUDP.Receive(ref ClientEp);
                 var ClientRequest = Encoding.ASCII.GetString(ClientRequestData);
-
-                //Console.WriteLine("Recived {0} from {1}, sending response", ClientRequest, ClientEp.Address.ToString());
                 ServerUDP.Send(ResponseData, ResponseData.Length, ClientEp);
             }
         }
@@ -64,7 +67,7 @@ namespace Akapulko
                 
             }
             GetImage.Start();
-            UDPBroadcasting.Abort(); //wyłącznie broadcastu bo juz nie trzeba
+            
 
         }
         private void StopListening()
@@ -86,6 +89,7 @@ namespace Akapulko
         }
         private void ReceiveImage()
         {
+            
             BinaryFormatter binFormatter = new BinaryFormatter();
             while (clientTCP.Connected)
             {
@@ -96,8 +100,21 @@ namespace Akapulko
                 int imageHeight = temp.Height; //960
                 int imageWidth = temp.Width; //1536
                 //koniec testow
+                //BroadcastTurnOFF(null);#UTP
+                  
+               
             }
         }
+        /* #UTP
+         void BroadcastTurnOFF(Serwer serwer)
+        {
+            if (serwer.UDPBroadcasting.IsAlive == true)
+            {
+                serwer.UDPBroadcasting.Abort();
+            }
+                        
+        }
+        */
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -108,6 +125,7 @@ namespace Akapulko
         {
             base.OnClosing(e);
             StopListening();
+            
         }
     }
 }

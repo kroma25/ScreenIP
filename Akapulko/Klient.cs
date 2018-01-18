@@ -72,10 +72,13 @@ namespace Akapulko
         private void SendDesktopImage()
         {
             //wysylanie obrazu do pary:P
-            BinaryFormatter binFormatter = new BinaryFormatter();
-            mainStream = client.GetStream();
-            binFormatter.Serialize(mainStream, GrabDesktop());
             
+                BinaryFormatter binFormatter = new BinaryFormatter();
+                mainStream = client.GetStream();
+                binFormatter.Serialize(mainStream, GrabDesktop());
+           
+
+
 
         }
         public Klient()
@@ -98,7 +101,7 @@ namespace Akapulko
             {
                 client.Connect(txtIp.Text, portNumber);
                 MessageBox.Show("Połączono!");
-                btnSend.Enabled = true;
+                btnSend.Enabled = true; 
                 btnAutoSearch.Enabled = false;
                 btnConnect.Enabled = false;
             }
@@ -129,7 +132,9 @@ namespace Akapulko
         private void timer1_Tick(object sender, EventArgs e)
         {
             //w zasadzie to sluzy tylko do wywolania funkcji
+
             SendDesktopImage();
+
         }
 
         private void btnAutoSearch_Click(object sender, EventArgs e)
