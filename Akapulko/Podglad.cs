@@ -64,7 +64,8 @@ namespace Akapulko
                 
             }
             GetImage.Start();
-            UDPBroadcasting.Abort(); 
+            UDPBroadcasting.Abort(); //wyłącznie broadcastu bo juz nie trzeba
+
         }
         private void StopListening()
         {
@@ -79,16 +80,9 @@ namespace Akapulko
             {
                 GetImage.Abort();
             }
-
-            //tymaczosowa naprawa #2 odkomentowac później
-            /*
-            if (UDPBroadcasting.IsAlive == true)
-            {
-                UDPBroadcasting.Abort();
-
-            }
-            */
-            //tymaczosowa naprawa #2
+           
+            
+            
         }
         private void ReceiveImage()
         {

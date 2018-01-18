@@ -28,11 +28,7 @@ namespace Akapulko
         {
             int port = int.Parse(txtPort.Text);
             Podglad f4 = new Podglad(port);
-            f4.Show();
-
-            
-            
-            
+            f4.Show();  
         }
 
         
