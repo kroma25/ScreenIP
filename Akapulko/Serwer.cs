@@ -101,6 +101,7 @@ namespace Akapulko
         }
 
         //przesuwanie okna wszedzie
+        //https://stackoverflow.com/questions/1592876/make-a-borderless-form-movable
         protected override void WndProc(ref Message m)
         {
             base.WndProc(ref m);
