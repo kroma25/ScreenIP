@@ -161,6 +161,22 @@ namespace Akapulko
 
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        //przesuwanie okna wszedzie
+        //https://stackoverflow.com/questions/1592876/make-a-borderless-form-movable
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+            if (m.Msg == WM_NCHITTEST)
+                m.Result = (IntPtr)(HT_CAPTION);
+        }
+
+        private const int WM_NCHITTEST = 0x84;
+        private const int HT_CLIENT = 0x1;
+        private const int HT_CAPTION = 0x2;
     }
     //1. Potrzebne do obslugi modul myszki
     public static class User32
