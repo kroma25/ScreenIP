@@ -69,17 +69,17 @@
     <Compile Include="Try.Designer.cs">
       <DependentUpon>Try.cs</DependentUpon>
     </Compile>
-    <Compile Include="Server.cs">
+    <Compile Include="Serwer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Server.Designer.cs">
-      <DependentUpon>Server.cs</DependentUpon>
+    <Compile Include="Serwer.Designer.cs">
+      <DependentUpon>Serwer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Client.cs">
+    <Compile Include="Klient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Client.Designer.cs">
-      <DependentUpon>Client.cs</DependentUpon>
+    <Compile Include="Klient.Designer.cs">
+      <DependentUpon>Klient.cs</DependentUpon>
     </Compile>
     <Compile Include="Podglad.cs">
       <SubType>Form</SubType>
@@ -92,11 +92,11 @@
     <EmbeddedResource Include="Try.resx">
       <DependentUpon>Try.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Server.resx">
-      <DependentUpon>Server.cs</DependentUpon>
+    <EmbeddedResource Include="Serwer.resx">
+      <DependentUpon>Serwer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Client.resx">
-      <DependentUpon>Client.cs</DependentUpon>
+    <EmbeddedResource Include="Klient.resx">
+      <DependentUpon>Klient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Podglad.resx">
       <DependentUpon>Podglad.cs</DependentUpon>

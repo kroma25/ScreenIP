@@ -17,7 +17,7 @@ namespace Akapulko
 {
     
    
-    public partial class Server : Form
+    public partial class Serwer : Form
     {
         private readonly TcpClient client = new TcpClient();
         private NetworkStream mainStream;
@@ -72,7 +72,7 @@ namespace Akapulko
                 binFormatter.Serialize(mainStream, GrabDesktop());
            
         }
-        public Server()
+        public Serwer()
         {
             InitializeComponent();
         }

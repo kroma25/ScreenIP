@@ -17,13 +17,13 @@ using System.Threading;
 namespace Akapulko
 {
     
-    public partial class Client : Form
+    public partial class Klient : Form
     {
         public Thread UDPBroadcasting;
 
         string ipETH = null;
         string ipWiFi = null;
-        public Client()
+        public Klient()
         {
             ipETH = GetLocalIPv4(NetworkInterfaceType.Ethernet);
             ipWiFi = GetLocalIPv4(NetworkInterfaceType.Wireless80211);

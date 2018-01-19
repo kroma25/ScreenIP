@@ -40,13 +40,13 @@ namespace Akapulko
 
         private void ustawieniaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Server wnd = new Server();
+            Serwer wnd = new Serwer();
             wnd.Show();
         }
 
         private void serwerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Client wnd = new Client();
+            Klient wnd = new Klient();
             wnd.Show();
         }
     }
