@@ -49,30 +49,30 @@
             this.zamknijToolStripMenuItem});
             this.contextMenuStrip3.Name = "contextMenuStrip3";
             this.contextMenuStrip3.ShowImageMargin = false;
-            this.contextMenuStrip3.Size = new System.Drawing.Size(128, 92);
+            this.contextMenuStrip3.Size = new System.Drawing.Size(151, 110);
             this.contextMenuStrip3.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip3_Opening);
             // 
             // ustawieniaToolStripMenuItem
             // 
             this.ustawieniaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
-            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.ustawieniaToolStripMenuItem.Text = "Klient";
+            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.ustawieniaToolStripMenuItem.Text = "Serwer";
             this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click);
             // 
             // serwerToolStripMenuItem
             // 
             this.serwerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.serwerToolStripMenuItem.Name = "serwerToolStripMenuItem";
-            this.serwerToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.serwerToolStripMenuItem.Text = "Serwer";
+            this.serwerToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.serwerToolStripMenuItem.Text = "Klient";
             this.serwerToolStripMenuItem.Click += new System.EventHandler(this.serwerToolStripMenuItem_Click);
             // 
             // zamknijToolStripMenuItem
             // 
             this.zamknijToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
-            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.zamknijToolStripMenuItem.Text = "Zamknij";
             this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
             // 

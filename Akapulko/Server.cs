@@ -30,17 +30,13 @@ namespace Akapulko
             //lapanie obrazu przez screenshoty
             Rectangle bounds = Screen.PrimaryScreen.Bounds;
             Bitmap screenshot = new Bitmap(bounds.Width, bounds.Height, PixelFormat.Format32bppPArgb);
-            
             Graphics graphic = Graphics.FromImage(screenshot);
-            
             graphic.CopyFromScreen(0, 0, 0, 0, screenshot.Size, CopyPixelOperation.SourceCopy);
-            User32.CURSORINFO cursorInfo;
-            cursorInfo.cbSize = Marshal.SizeOf(typeof(User32.CURSORINFO));
 
             //rozdzielcznosc rzeczywista jest sprawdzana na komputerze i ustawina potem jest konwertowan na rodzielczosc virtualna!!
-            
 
-
+            User32.CURSORINFO cursorInfo;
+            cursorInfo.cbSize = Marshal.SizeOf(typeof(User32.CURSORINFO));
             if (User32.GetCursorInfo(out cursorInfo))
             {
                 // if the cursor is showing draw it on the screen shot
@@ -65,9 +61,7 @@ namespace Akapulko
                     }
                 }
             }
-
             return screenshot;
-
         }
         private void SendDesktopImage()
         {
@@ -77,9 +71,6 @@ namespace Akapulko
                 mainStream = client.GetStream();
                 binFormatter.Serialize(mainStream, GrabDesktop());
            
-
-
-
         }
         public Server()
         {
@@ -114,9 +105,7 @@ namespace Akapulko
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            //Wysyłanie obrazu
-            
-            
+            //Wysyłanie obrazu  
             if (btnSend.Text.StartsWith("Udostępnij ekran"))
             {
                 timer1.Start();
@@ -158,8 +147,6 @@ namespace Akapulko
             txtIp.Text = ServerEp.Address.ToString();
             txtPort.Text = ServerResponse;
             Client.Close();
-            
-
         }
 
         private void btnClose_Click(object sender, EventArgs e)

@@ -19,4 +19,10 @@ tymczasowe obejscie: ponowne otwarcie okna nie w³acza UDP gdy¿ UDP ca³y
 
 - w zasadzie ca³y program dzia³a tylko jesli robimy wszystkow odpowiedniach krokach
 
-
+Trzeba dodaæ:
+-jeœli dany klient przez 10 sec nie przeœle obazu zerwac po³¹cznie
+-jeœli serwer nie bêdzie mia³ odpowiedzi od klienta ¿e odbiera obraz 
+to powinien zerwac po¹czenie i wróciæ do stanu pocz¹tkowego
+-zamkniêcie okna w podgl¹dzie automatycznie powinno zrywac po³¹czenie
+-zakoñczenie po³¹czenia po stronie serwera powinno wy³¹czaæ 
+-konwertowanie obrazu do odpowiedniej rozdzielczosci

@@ -10,3 +10,4 @@ C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csproj.Genera
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csproj.CoreCompileInputs.cache
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.exe
 C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.pdb
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csprojResolveAssemblyReference.cache
