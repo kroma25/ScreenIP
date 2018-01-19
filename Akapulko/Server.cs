@@ -17,7 +17,7 @@ namespace Akapulko
 {
     
    
-    public partial class Klient : Form
+    public partial class Server : Form
     {
         private readonly TcpClient client = new TcpClient();
         private NetworkStream mainStream;
@@ -81,7 +81,7 @@ namespace Akapulko
 
 
         }
-        public Klient()
+        public Server()
         {
             InitializeComponent();
         }

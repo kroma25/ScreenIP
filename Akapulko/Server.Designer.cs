@@ -1,6 +1,6 @@
 ﻿namespace Akapulko
 {
-    partial class Klient
+    partial class Server
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Klient));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Server));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIp = new System.Windows.Forms.TextBox();
@@ -52,7 +52,7 @@
             this.label1.Location = new System.Drawing.Point(178, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 18);
+            this.label1.Size = new System.Drawing.Size(41, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "IP:";
             // 
@@ -62,7 +62,7 @@
             this.label2.Location = new System.Drawing.Point(162, 51);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 18);
+            this.label2.Size = new System.Drawing.Size(62, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Port:";
             // 
@@ -73,7 +73,7 @@
             this.txtIp.Location = new System.Drawing.Point(218, 14);
             this.txtIp.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtIp.Name = "txtIp";
-            this.txtIp.Size = new System.Drawing.Size(195, 20);
+            this.txtIp.Size = new System.Drawing.Size(195, 25);
             this.txtIp.TabIndex = 4;
             // 
             // txtPort
@@ -83,17 +83,17 @@
             this.txtPort.Location = new System.Drawing.Point(218, 51);
             this.txtPort.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(195, 20);
+            this.txtPort.Size = new System.Drawing.Size(195, 25);
             this.txtPort.TabIndex = 5;
             // 
             // btnConnect
             // 
             this.btnConnect.FlatAppearance.BorderSize = 0;
             this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConnect.Location = new System.Drawing.Point(151, 91);
+            this.btnConnect.Location = new System.Drawing.Point(154, 86);
             this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(140, 78);
+            this.btnConnect.Size = new System.Drawing.Size(140, 58);
             this.btnConnect.TabIndex = 6;
             this.btnConnect.Text = "Sprawdź połączenie";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -104,10 +104,10 @@
             this.btnSend.Enabled = false;
             this.btnSend.FlatAppearance.BorderSize = 0;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSend.Location = new System.Drawing.Point(299, 91);
+            this.btnSend.Location = new System.Drawing.Point(302, 86);
             this.btnSend.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(140, 78);
+            this.btnSend.Size = new System.Drawing.Size(140, 58);
             this.btnSend.TabIndex = 7;
             this.btnSend.Text = "Udostępnij ekran";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -121,10 +121,10 @@
             // 
             this.btnAutoSearch.FlatAppearance.BorderSize = 0;
             this.btnAutoSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutoSearch.Location = new System.Drawing.Point(5, 92);
+            this.btnAutoSearch.Location = new System.Drawing.Point(8, 87);
             this.btnAutoSearch.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnAutoSearch.Name = "btnAutoSearch";
-            this.btnAutoSearch.Size = new System.Drawing.Size(140, 78);
+            this.btnAutoSearch.Size = new System.Drawing.Size(140, 58);
             this.btnAutoSearch.TabIndex = 8;
             this.btnAutoSearch.Text = "Wyszukaj automatycznie";
             this.btnAutoSearch.UseVisualStyleBackColor = true;
@@ -153,11 +153,11 @@
             this.labelKlient.AutoSize = true;
             this.labelKlient.Font = new System.Drawing.Font("Segoe UI Symbol", 24F, System.Drawing.FontStyle.Bold);
             this.labelKlient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(45)))));
-            this.labelKlient.Location = new System.Drawing.Point(22, 16);
+            this.labelKlient.Location = new System.Drawing.Point(13, 14);
             this.labelKlient.Name = "labelKlient";
-            this.labelKlient.Size = new System.Drawing.Size(107, 45);
+            this.labelKlient.Size = new System.Drawing.Size(149, 54);
             this.labelKlient.TabIndex = 10;
-            this.labelKlient.Text = "Klient";
+            this.labelKlient.Text = "Serwer";
             this.labelKlient.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnClose
@@ -172,11 +172,11 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // Klient
+            // Server
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(454, 171);
+            this.ClientSize = new System.Drawing.Size(454, 151);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSend);
@@ -190,7 +190,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Name = "Klient";
+            this.Name = "Server";
             this.Text = "Klient";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

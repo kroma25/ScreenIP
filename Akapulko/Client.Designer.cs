@@ -1,6 +1,6 @@
 ﻿namespace Akapulko
 {
-    partial class Serwer
+    partial class Client
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Serwer));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Client));
             this.label1 = new System.Windows.Forms.Label();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.btnListen = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(160, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 18);
+            this.label1.Size = new System.Drawing.Size(62, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Port:";
             // 
@@ -59,7 +59,7 @@
             this.txtPort.Location = new System.Drawing.Point(211, 103);
             this.txtPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(74, 20);
+            this.txtPort.Size = new System.Drawing.Size(74, 25);
             this.txtPort.TabIndex = 3;
             this.txtPort.Text = "2017";
             this.txtPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -75,7 +75,7 @@
             this.btnListen.Name = "btnListen";
             this.btnListen.Size = new System.Drawing.Size(119, 97);
             this.btnListen.TabIndex = 4;
-            this.btnListen.Text = "Połącz";
+            this.btnListen.Text = "Wyświetl";
             this.btnListen.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnListen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnListen.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(126, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 18);
+            this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "IP(WiFi):";
             // 
@@ -98,7 +98,7 @@
             this.label3.Location = new System.Drawing.Point(135, 63);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 18);
+            this.label3.Size = new System.Drawing.Size(107, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "IP (Eth): ";
             // 
@@ -127,11 +127,11 @@
             this.ScreenIP.AutoSize = true;
             this.ScreenIP.Font = new System.Drawing.Font("Segoe UI Symbol", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScreenIP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(45)))));
-            this.ScreenIP.Location = new System.Drawing.Point(1, 7);
+            this.ScreenIP.Location = new System.Drawing.Point(4, 7);
             this.ScreenIP.Name = "ScreenIP";
-            this.ScreenIP.Size = new System.Drawing.Size(122, 45);
+            this.ScreenIP.Size = new System.Drawing.Size(130, 54);
             this.ScreenIP.TabIndex = 0;
-            this.ScreenIP.Text = "Serwer";
+            this.ScreenIP.Text = "Klient";
             this.ScreenIP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnClose
@@ -146,7 +146,7 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // Serwer
+            // Client
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(45)))));
@@ -162,7 +162,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Serwer";
+            this.Name = "Client";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Serwer";
             this.panel1.ResumeLayout(false);

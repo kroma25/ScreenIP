@@ -17,12 +17,12 @@ using System.Threading;
 namespace Akapulko
 {
     
-    public partial class Serwer : Form
+    public partial class Client : Form
     {
         public Thread UDPBroadcasting;
         
         
-        public Serwer()
+        public Client()
         {
             
             InitializeComponent();
