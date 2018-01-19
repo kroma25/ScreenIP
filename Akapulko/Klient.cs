@@ -117,7 +117,7 @@ namespace Akapulko
             //Wysyłanie obrazu
             
             
-            if (btnSend.Text.StartsWith("Udostępnij Ekran"))
+            if (btnSend.Text.StartsWith("Udostępnij ekran"))
             {
                 timer1.Start();
                 btnSend.Text = "Przerwij transmisje";
@@ -125,7 +125,7 @@ namespace Akapulko
             else
             {
                 timer1.Stop();
-                btnSend.Text = "Udostępnij Ekran";
+                btnSend.Text = "Udostępnij ekran";
             }
         }
 

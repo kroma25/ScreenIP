@@ -58,14 +58,16 @@
             this.txtPort.Location = new System.Drawing.Point(211, 103);
             this.txtPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(83, 25);
+            this.txtPort.Size = new System.Drawing.Size(74, 25);
             this.txtPort.TabIndex = 3;
+            this.txtPort.Text = "2017";
+            this.txtPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnListen
             // 
             this.btnListen.FlatAppearance.BorderSize = 0;
             this.btnListen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListen.ForeColor = System.Drawing.Color.White;
+            this.btnListen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnListen.Image = ((System.Drawing.Image)(resources.GetObject("btnListen.Image")));
             this.btnListen.Location = new System.Drawing.Point(0, 63);
             this.btnListen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
