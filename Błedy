@@ -1,6 +1,15 @@
 - problem z rozdzielczoœci¹:
 # 1366x768 dzi³a poprawnie
+# 1600x900 dzi³a poprawnie
+# 1600x1024 dzi³a poprawnie
+# 1600x1200 obcina i Ÿle szczytuje rozmiar ramki, problem z dpi
+# 1680x1050 dzi³a poprawnie
+# 1920x1080 obcina i Ÿle szczytuje rozmiar ramki, problem z dpi
 # 1920x1200 obcina i Ÿle szczytuje rozmiar ramki, problem z dpi
+# 1920x1440 obcina i Ÿle szczytuje rozmiar ramki, problem z dpi
+# 2048x1536 obcina i Ÿle szczytuje rozmiar ramki, problem z dpi
+# 2880x1800 obcina i Ÿle szczytuje rozmiar ramki, problem z dpi
+
 
 - broadcast UDP - jest mo¿liwa tylko jedna inicjalizacja
 # jeœli uruchomiy okno serwer i wdusmymy po³¹cz zamkniemy okno tu ponowne uruchominiea okna nie zadzia³a nam UDP
