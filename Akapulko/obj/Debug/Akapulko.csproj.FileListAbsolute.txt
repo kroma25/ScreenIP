@@ -1,0 +1,12 @@
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\bin\Debug\Akapulko.exe.config
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\bin\Debug\Akapulko.exe
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\bin\Debug\Akapulko.pdb
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Try.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Server.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Client.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Podglad.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.Properties.Resources.resources
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csproj.GenerateResource.Cache
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.csproj.CoreCompileInputs.cache
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.exe
+C:\Users\Przemek\source\repos\ScreenIP\Akapulko\obj\Debug\Akapulko.pdb

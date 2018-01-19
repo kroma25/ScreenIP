@@ -132,7 +132,8 @@ namespace Akapulko
         private void timer1_Tick(object sender, EventArgs e)
         {
             //w zasadzie to sluzy tylko do wywolania funkcji
-
+            //Wartość domyślna to 100 milisekund. zwiekszenie tej opcji spowoduje zwiekszenie ilosci klatek
+            timer1.Interval = 50;
             SendDesktopImage();
 
         }
