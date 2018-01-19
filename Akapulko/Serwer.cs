@@ -13,6 +13,7 @@ using System.Net;
 using System.Threading;
 
 
+
 namespace Akapulko
 {
     
@@ -28,7 +29,7 @@ namespace Akapulko
             label2.Text = "IP(WiFi): " + GetLocalIPv4(NetworkInterfaceType.Wireless80211);
             label3.Text = "IP(Eth): " + GetLocalIPv4(NetworkInterfaceType.Ethernet);
             UDPBroadcasting = new Thread(UDPBroadcast);
-           
+            
         }
 
         private void btnListen_Click(object sender, EventArgs e)
@@ -99,6 +100,22 @@ namespace Akapulko
             return output;
         }
 
-       
+        //przesuwanie okna wszedzie
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+            if (m.Msg == WM_NCHITTEST)
+                m.Result = (IntPtr)(HT_CAPTION);
+        }
+
+        private const int WM_NCHITTEST = 0x84;
+        private const int HT_CLIENT = 0x1;
+        private const int HT_CAPTION = 0x2;
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+                  
+        }
     }
 }

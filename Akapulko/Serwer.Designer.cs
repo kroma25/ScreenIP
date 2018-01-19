@@ -34,70 +34,133 @@
             this.btnListen = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ScreenIP = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 57);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(160, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(62, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Port:";
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(97, 54);
-            this.txtPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPort.BackColor = System.Drawing.Color.DimGray;
+            this.txtPort.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPort.Location = new System.Drawing.Point(211, 103);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(76, 20);
+            this.txtPort.Size = new System.Drawing.Size(83, 25);
             this.txtPort.TabIndex = 3;
             // 
             // btnListen
             // 
-            this.btnListen.Location = new System.Drawing.Point(26, 149);
-            this.btnListen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListen.FlatAppearance.BorderSize = 0;
+            this.btnListen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListen.ForeColor = System.Drawing.Color.White;
+            this.btnListen.Image = ((System.Drawing.Image)(resources.GetObject("btnListen.Image")));
+            this.btnListen.Location = new System.Drawing.Point(0, 63);
+            this.btnListen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnListen.Name = "btnListen";
-            this.btnListen.Size = new System.Drawing.Size(158, 46);
+            this.btnListen.Size = new System.Drawing.Size(119, 97);
             this.btnListen.TabIndex = 4;
             this.btnListen.Text = "Połącz";
+            this.btnListen.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnListen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnListen.UseVisualStyleBackColor = true;
             this.btnListen.Click += new System.EventHandler(this.btnListen_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 98);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(126, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "IP(WiFi):";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 120);
+            this.label3.Location = new System.Drawing.Point(135, 63);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(107, 25);
             this.label3.TabIndex = 6;
-            this.label3.Text = "IP(Eth): ";
+            this.label3.Text = "IP (Eth): ";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnListen);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(119, 163);
+            this.panel1.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel2.Controls.Add(this.ScreenIP);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(119, 61);
+            this.panel2.TabIndex = 0;
+            // 
+            // ScreenIP
+            // 
+            this.ScreenIP.AutoSize = true;
+            this.ScreenIP.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenIP.Location = new System.Drawing.Point(15, 17);
+            this.ScreenIP.Name = "ScreenIP";
+            this.ScreenIP.Size = new System.Drawing.Size(114, 32);
+            this.ScreenIP.TabIndex = 0;
+            this.ScreenIP.Text = "ScreenIP";
+            this.ScreenIP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(337, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 34);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // Serwer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(212, 206);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(45)))));
+            this.ClientSize = new System.Drawing.Size(370, 163);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnListen);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Serwer";
             this.Text = "Serwer";
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,5 +173,9 @@
         private System.Windows.Forms.Button btnListen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label ScreenIP;
+        private System.Windows.Forms.Button btnClose;
     }
 }
