@@ -120,12 +120,12 @@
             // ScreenIP
             // 
             this.ScreenIP.AutoSize = true;
-            this.ScreenIP.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScreenIP.Location = new System.Drawing.Point(15, 17);
+            this.ScreenIP.Font = new System.Drawing.Font("Segoe UI Symbol", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenIP.Location = new System.Drawing.Point(1, 7);
             this.ScreenIP.Name = "ScreenIP";
-            this.ScreenIP.Size = new System.Drawing.Size(114, 32);
+            this.ScreenIP.Size = new System.Drawing.Size(149, 54);
             this.ScreenIP.TabIndex = 0;
-            this.ScreenIP.Text = "ScreenIP";
+            this.ScreenIP.Text = "Serwer";
             this.ScreenIP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnClose
@@ -157,6 +157,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Serwer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Serwer";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

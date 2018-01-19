@@ -40,35 +40,39 @@
             // 
             // contextMenuStrip3
             // 
-            this.contextMenuStrip3.BackColor = System.Drawing.Color.White;
-            this.contextMenuStrip3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.contextMenuStrip3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(45)))));
+            this.contextMenuStrip3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.contextMenuStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ustawieniaToolStripMenuItem,
             this.serwerToolStripMenuItem,
             this.zamknijToolStripMenuItem});
             this.contextMenuStrip3.Name = "contextMenuStrip3";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(135, 82);
+            this.contextMenuStrip3.ShowImageMargin = false;
+            this.contextMenuStrip3.Size = new System.Drawing.Size(151, 110);
             this.contextMenuStrip3.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip3_Opening);
             // 
             // ustawieniaToolStripMenuItem
             // 
+            this.ustawieniaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
-            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
+            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.ustawieniaToolStripMenuItem.Text = "Klient";
             this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click);
             // 
             // serwerToolStripMenuItem
             // 
+            this.serwerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.serwerToolStripMenuItem.Name = "serwerToolStripMenuItem";
-            this.serwerToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
+            this.serwerToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.serwerToolStripMenuItem.Text = "Serwer";
             this.serwerToolStripMenuItem.Click += new System.EventHandler(this.serwerToolStripMenuItem_Click);
             // 
             // zamknijToolStripMenuItem
             // 
+            this.zamknijToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
-            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
+            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.zamknijToolStripMenuItem.Text = "Zamknij";
             this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
             // 
