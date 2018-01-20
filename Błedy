@@ -25,4 +25,4 @@ Trzeba dodaæ:
 to powinien zerwac po¹czenie i wróciæ do stanu pocz¹tkowego
 -zamkniêcie okna w podgl¹dzie automatycznie powinno zrywac po³¹czenie
 -zakoñczenie po³¹czenia po stronie serwera powinno wy³¹czaæ 
--konwertowanie obrazu do odpowiedniej rozdzielczosci
+-konwertowanie obrazu do odpowiedniej rozdzielczosci przy du¿ych rozdzieczlczoœciach
